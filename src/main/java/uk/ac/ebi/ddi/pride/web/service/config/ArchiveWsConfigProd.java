@@ -6,6 +6,6 @@ package uk.ac.ebi.ddi.pride.web.service.config;
 public class ArchiveWsConfigProd extends AbstractArchiveWsConfig {
 
     public ArchiveWsConfigProd() {
-        super("http", "www.ebi.ac.uk");
+        super("https", "www.ebi.ac.uk");
     }
 }

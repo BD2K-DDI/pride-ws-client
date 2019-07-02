@@ -29,11 +29,10 @@ public class ProjectSummaryWsClientTest {
     public void testList() throws Exception {
 
         ProjectSummaryList res = projectWsClient.list("",1,10);
-
         assertNotNull(res);
         assertNotNull(res.list);
         assertTrue(res.list.length > 0);
-        assertTrue(res.list.length == 10);
+        assertEquals(10, res.list.length);
 
     }
 
@@ -44,7 +43,5 @@ public class ProjectSummaryWsClientTest {
         assertNotNull(res);
         assertNotNull(res.list);
         assertTrue(res.list.length > 0);
-        assertTrue(res.list.length == 10);
-
     }
 }

@@ -19,6 +19,7 @@ public class ProjectWsClientTest {
 
     @Autowired
     AbstractArchiveWsConfig archiveWsConfig;
+
     ProjectWsClient projectWsClient;
 
     @Before

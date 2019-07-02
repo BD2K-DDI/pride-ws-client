@@ -30,7 +30,7 @@ public class AssayWsClientTest {
         AssayDetail res = assayWsClient.getAssayByAccession("38579");
 
         assertNotNull(res);
-        assertNotNull(res.proteinCount == 1004);
+        assertTrue(res.proteinCount > 0);
 
     }
 

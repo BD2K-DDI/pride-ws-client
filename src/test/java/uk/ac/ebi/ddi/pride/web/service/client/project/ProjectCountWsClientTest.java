@@ -30,7 +30,7 @@ public class ProjectCountWsClientTest {
         Integer res = projectCountWsClient.getProjectCount("");
 
         assertNotNull(res);
-        assertNotNull(res > 0);
+        assertTrue(res > 0);
 
 
     }
@@ -40,7 +40,7 @@ public class ProjectCountWsClientTest {
 
         Integer res = projectCountWsClient.getProjectCount("", new String[]{"human", "mouse"},null,null,null,null,null,null,null);
         assertNotNull(res);
-        assertNotNull(res > 0);
+        assertTrue(res > 0);
 
     }
 
